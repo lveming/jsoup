@@ -33,8 +33,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //注解
         ButterKnife.bind(this);
         getSupportActionBar().hide();
+
         initData();
 
     }
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 return titles[position%titles.length];
             }
         };
+
         mViewPager.setAdapter(mAdapter);
         mTabLayout.setupWithViewPager(mViewPager);
 

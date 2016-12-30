@@ -20,9 +20,15 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2016/12/10.
+ *
+ * RecycleView不支持点击事件，所以在适配器中添加OnItemClickLitener
+ * 根据是否为item最后一项，显示“加载更多item布局”
+ *
  */
 public class MainAdapter extends RecyclerView.Adapter {
+    //常规子布局
     private final int TYPE_NORMAL = 0;
+    //加载更多子布局
     private final int TYPE_FOOT = 1;
 
     private Context mContext;
@@ -54,6 +60,7 @@ public class MainAdapter extends RecyclerView.Adapter {
     }
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        //根据getItemViewType()返回的值进行判断
         if (viewType==TYPE_NORMAL){
             View view= LayoutInflater.from(mContext).inflate(R.layout.item_content,parent,false);
             return new ItemViewHolder(view);

@@ -20,6 +20,7 @@ import butterknife.OnClick;
 
 /**
  * Created by Administrator on 2016/12/11.
+ * 测试类
  */
 public class Test extends AppCompatActivity {
 

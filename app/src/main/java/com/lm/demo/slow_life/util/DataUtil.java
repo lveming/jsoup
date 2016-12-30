@@ -8,10 +8,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * author： bwl on 2016-04-11.
- * email: bxl049@163.com
- */
 public class DataUtil {
 
 

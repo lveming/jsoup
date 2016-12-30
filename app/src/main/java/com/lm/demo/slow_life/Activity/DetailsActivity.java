@@ -25,6 +25,13 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+
+/*
+* 详细类
+* 使用WebView显示，思路：将html爬取下来，解析有用的部分，
+* 分别为标题，时间，内容，然后自己写一个html模板，使用String类的format()插入解析出来的内容
+*
+* */
 public class DetailsActivity extends AppCompatActivity {
 
 

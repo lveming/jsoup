@@ -28,6 +28,10 @@ import java.util.List;
 
 /**
  * Created by Administrator on 2016/12/10.
+ * 重点实现部分，也是难点部分
+ * 对网络进行判断，没网时进行加载数据库中的数据
+ *
+ *
  */
 public class MainFragment extends Fragment{
 
