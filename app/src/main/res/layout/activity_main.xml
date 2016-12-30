@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/topbar_bg">
+
+        <ImageButton
+            android:id="@+id/id_main_top_IB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/topbar_icon_bg" />
+
+        <TextView
+            android:id="@+id/id_main_top_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/id_main_top_IB"
+            android:gravity="center_vertical"
+            android:text="慢生活"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/id_main_TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/tablayoutStyle">
+    </android.support.design.widget.TabLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_main_ViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+</LinearLayout>

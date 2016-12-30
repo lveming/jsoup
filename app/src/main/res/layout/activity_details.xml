@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/topbar_bg"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/id_imb_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:src="@drawable/activity_back_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="内容"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/id_loadfailed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:text="没网络"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/id_newsinfo_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/id_newsinfo_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
